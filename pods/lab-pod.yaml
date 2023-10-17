@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: lab-pod
+  labels:
+    app: lab-pod
+spec:
+  containers:
+  - env:
+    - name: MESSAGE
+      value: If you're reading this its too late!
+    image: quay.io/practicalopenshift/hello-world
+    imagePullPolicy: Always
+    name: hello-world-override
+    resources: {}
+ 
