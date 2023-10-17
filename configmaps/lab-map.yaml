@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: label-map
+data:
+   MESSAGE: |
+    Testing with lab configmaps
